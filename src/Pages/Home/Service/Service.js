@@ -14,7 +14,7 @@ const Service = ({service}) => {
                         <img src={img} alt="" />
                     </div>
                     <div className="service-content">
-                        <h3><a href="#">{name}</a></h3>
+                        <h3><Link to="#">{name}</Link></h3>
                         <p>{description.slice(0, 100)}</p>
                         <Link to={`/news/${id}`}><Button variant="primary">Details</Button></Link>
                     </div>

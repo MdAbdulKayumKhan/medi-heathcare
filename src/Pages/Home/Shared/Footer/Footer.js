@@ -6,27 +6,27 @@ const Footer = () => {
     return (
         <div>
             
-            <footer class="bg-dark text-center text-white footer"> 
-                <div class="container p-4">
-                    <section class="">
+            <footer className="bg-dark text-center text-white footer"> 
+                <div className="container p-4">
+                    <section className="">
                         <form action="">
-                            <div class="row d-flex justify-content-center">
+                            <div className="row d-flex justify-content-center">
                                
-                                <div class="col-auto">
-                                    <p class="pt-2">
+                                <div className="col-auto">
+                                    <p className="pt-2">
                                         <strong>Sign up for our newsletter</strong>
                                     </p>
                                 </div>
-                                <div class="col-md-5 col-12">
+                                <div className="col-md-5 col-12">
                                    
-                                    <div class="form-outline form-white mb-4">
-                                        <input type="email" id="form5Example21" class="form-control" />
-                                        <label class="form-label" for="form5Example21"></label>
+                                    <div className="form-outline form-white mb-4">
+                                        <input type="email" id="form5Example21" className="form-control" />
+                                        <label className="form-label" htmlFor="form5Example21"></label>
                                     </div>
                                 </div>
-                                <div class="col-auto">
+                                <div className="col-auto">
                                     
-                                    <button type="submit" class="btn btn-outline-light mb-4">
+                                    <button type="submit" className="btn btn-outline-light mb-4">
                                         Subscribe
                                     </button>
                                 </div>
@@ -34,88 +34,88 @@ const Footer = () => {
                         </form>
                     </section>
                    
-                    <section class="mb-4">
+                    <section className="mb-4">
                         <p>
                         A healthcare system can be defined as the method by which healthcare is financed, organized, and delivered to a population. It includes issues of access ...
                         </p>
                     </section>
                    
-                    <section class="">
+                    <section className="">
                        
-                        <div class="row">
+                        <div className="row">
                            
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase">Home</h5>
+                            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 className="text-uppercase">Home</h5>
 
-                                {/* <ul class="list-unstyled mb-0">
+                                {/* <ul className="list-unstyled mb-0">
                                     <li>
-                                        <a href="#!" class="text-white">Link 1</a>
+                                        <a href="#!" className="text-white">Link 1</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 2</a>
+                                        <a href="#!" className="text-white">Link 2</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 3</a>
+                                        <a href="#!" className="text-white">Link 3</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 4</a>
+                                        <a href="#!" className="text-white">Link 4</a>
                                     </li>
                                 </ul> */}
                             </div>
                            
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase">Department</h5>
+                            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 className="text-uppercase">Department</h5>
 
-                                {/* <ul class="list-unstyled mb-0">
+                                {/* <ul className="list-unstyled mb-0">
                                     <li>
-                                        <a href="#!" class="text-white">Link 1</a>
+                                        <a href="#!" className="text-white">Link 1</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 2</a>
+                                        <a href="#!" className="text-white">Link 2</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 3</a>
+                                        <a href="#!" className="text-white">Link 3</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 4</a>
+                                        <a href="#!" className="text-white">Link 4</a>
                                     </li>
                                 </ul> */}
                             </div>
                             
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase">Doctors</h5>
+                            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 className="text-uppercase">Doctors</h5>
 
-                                {/* <ul class="list-unstyled mb-0">
+                                {/* <ul className="list-unstyled mb-0">
                                     <li>
-                                        <a href="#!" class="text-white">Link 1</a>
+                                        <a href="#!" className="text-white">Link 1</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 2</a>
+                                        <a href="#!" className="text-white">Link 2</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 3</a>
+                                        <a href="#!" className="text-white">Link 3</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 4</a>
+                                        <a href="#!" className="text-white">Link 4</a>
                                     </li>
                                 </ul> */}
                             </div>
                           
-                            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-                                <h5 class="text-uppercase">News</h5>
+                            <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                                <h5 className="text-uppercase">News</h5>
 
-                                {/* <ul class="list-unstyled mb-0">
+                                {/* <ul className="list-unstyled mb-0">
                                     <li>
-                                        <a href="#!" class="text-white">Link 1</a>
+                                        <a href="#!" className="text-white">Link 1</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 2</a>
+                                        <a href="#!" className="text-white">Link 2</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 3</a>
+                                        <a href="#!" className="text-white">Link 3</a>
                                     </li>
                                     <li>
-                                        <a href="#!" class="text-white">Link 4</a>
+                                        <a href="#!" className="text-white">Link 4</a>
                                     </li>
                                 </ul> */}
                             </div>

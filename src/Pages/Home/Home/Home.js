@@ -3,9 +3,7 @@ import Header from '../Shared/Header/Header';
 import Banner from '../Banner/Banner';
 import Footer from '../Shared/Footer/Footer';
 import Service from '../Service/Service';
-import about01 from '../../../images/about/medical-brand-icon-border.png';
 import about02 from '../../../images/about/about-img.jpg';
-import about03 from '../../../images/about/about-shape.png';
 import about04 from '../../../images/about/author-ava.png';
 
 const Home = () => {
@@ -46,21 +44,21 @@ const Home = () => {
                 </div>
             </section>
             <section>
-                <div class="container px-4 mt-5 mb-5">
-                    <div class="row gx-5">
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="p-3 border bg-light">
+                <div className="container px-4 mt-5 mb-5">
+                    <div className="row gx-5">
+                        <div className="col-xl-6 col-lg-6 col-md-6">
+                            <div className="p-3 border bg-light">
                                 <img className="img-fluid" src={about02} alt="" />
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6">
-                            <div class="p-3 border bg-light">
-                                <div class="about-right-side pt-55 mb-30">
-                                    <div class="about-title mb-20">
+                        <div className="col-xl-6 col-lg-6 col-md-6">
+                            <div className="p-3 border bg-light">
+                                <div className="about-right-side pt-55 mb-30">
+                                    <div className="about-title mb-20">
                                         <h5>About Us</h5>
                                         <h1>Short Story About Medi-Heathcare Clinic.</h1>
                                     </div>
-                                    <div class="about-text">
+                                    <div className="about-text">
                                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                             irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                                             cupidatat non proident, sunt in culpa qui officia.</p>
@@ -69,11 +67,11 @@ const Home = () => {
                                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                                             occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br/>
                                     </div>
-                                    <div class="about-author d-flex align-items-center">
-                                        <div class="author-ava">
+                                    <div className="about-author d-flex align-items-center">
+                                        <div className="author-ava">
                                             <img src={about04} alt=""/>
                                         </div>
-                                        <div class="author-desination">
+                                        <div className="author-desination">
                                             <h4>Rosalina D. Williamson</h4>
                                             <h6>founder</h6>
                                         </div>

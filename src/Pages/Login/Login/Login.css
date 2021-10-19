@@ -1,0 +1,28 @@
+.basic-login {
+     padding: 90px;
+     background-color: honeydew;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+ .basic-login {
+     padding: 50px;}
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.basic-login {
+     padding: 40px;}
+}
+@media (max-width: 767px) {
+.basic-login {
+    padding: 30px;}
+}
+   
+.basic-login h3 {
+        font-size: 30px;
+}
+.basic-login input {
+       width: 100%;
+}
+
+.basic-login label span {
+       color: #fe4536;
+}

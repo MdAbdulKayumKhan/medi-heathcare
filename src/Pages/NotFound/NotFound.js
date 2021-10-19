@@ -1,9 +1,12 @@
 import React from 'react';
+import Footer from '../Home/Shared/Footer/Footer';
+import Header from '../Home/Shared/Header/Header';
 
 const NotFound = () => {
     return (
         <div>
-            <h2>this is not found</h2>
+            <Header></Header>
+            <Footer></Footer>
         </div>
     );
 };

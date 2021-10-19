@@ -3,6 +3,7 @@ import Header from '../Shared/Header/Header';
 import sectionImg01 from '../../../images/section/section-back-icon.png';
 import './Services.css';
 import Service from '../Service/Service';
+import Footer from '../Shared/Footer/Footer';
 
 const Services = () => {
    const [services, setServices] = useState([]);
@@ -42,6 +43,7 @@ const Services = () => {
                         </div>
                     </div>
                 </section>
+            <Footer></Footer>
             
         </div>
     );

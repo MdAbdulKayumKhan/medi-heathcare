@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Body Surgery",
+    "description": "Plastic surgery is a surgical specialty involving the restoration, reconstruction, or alteration of the human body. It can be divided into two main categories: reconstructive surgery and cosmetic surgery. Reconstructive surgery includes craniofacial surgery, hand surgery, microsurgery, and the treatment of burns.",
+    "img": " https://i.ibb.co/sqzZ4SB/service1.png"
+  },
+  {
+    "id": 2,
+    "name": "Dental Care",
+    "description": "Oral hygiene is the practice of keeping one's mouth clean and free of disease and other problems by regular brushing of the teeth and cleaning between the teeth. It is important that oral hygiene be carried out on a regular basis to enable prevention of dental disease and bad breath.",
+    "img": "https://i.ibb.co/d6nR933/service2.png"
+  },
+  {
+    "id": 3,
+    "name": "Eye Care",
+    "description": "An eye care professional is an individual who provides a service related to the eyes or vision. It is any healthcare worker involved in eye care, from one with a small amount of post-secondary training to practitioners with a doctoral level of education.",
+    "img": "https://i.ibb.co/RgNPGng/service3.png"
+  },
+  {
+    "id": 4,
+    "name": "Neurology Sargery",
+    "description": "Neurosurgery or neurological surgery, known in common parlance as brain surgery, is the medical specialty concerned with the prevention, diagnosis, surgical treatment, and rehabilitation of disorders ...",
+    "img": "https://i.ibb.co/ww8SzJ2/service5.png"
+  },
+  {
+    "id": 5,
+    "name": "Allergic Issue",
+    "description": "Allergies, also known as allergic diseases, are a number of conditions caused by hypersensitivity of the immune system to typically harmless substances in the environment. These diseases include hay fever, food allergies, atopic dermatitis, allergic asthma, and anaphylaxis.",
+    "img": "https://i.ibb.co/qBbQ0JJ/service4.png"
+  },
+  {
+    "id": 6,
+    "name": "Blood Cancer",
+    "description": "Cancer that begins in blood-forming tissue, such as the bone marrow, or in the cells of the immune system. Examples of blood cancer are leukemia, lymphoma, and multiple myeloma. Also called hematologic cancer.",
+    "img": "https://i.ibb.co/w77CsW6/service6.png"
+  },
+  {
+    "id": 7,
+    "name": "CONSULTANT",
+    "description": "A consultant is an person who provides professional or expert advice in a particular field of science or business to either an organisation or individual. ... Firstly, a consultant provides expertise that a client lacks or support that a client is unable to fulfill.",
+    "img": "https://i.ibb.co/w77CsW6/service6.png"
+  }
+]

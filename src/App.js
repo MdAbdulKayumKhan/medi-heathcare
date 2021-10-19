@@ -5,6 +5,10 @@ import Home from './Pages/Home/Home/Home';
 import Services from './Pages/Home/Services/Services';
 import Login from './Pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import News from './Pages/Home/News/News';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Doctors from './Pages/Home/Doctors/Doctors';
+import NotFound from './Pages/NotFound/NotFound';
 
 function App() {
   return (
@@ -21,15 +25,19 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
+            <Route path="/doctors">
+              <Doctors></Doctors>
+            </Route>
+            <PrivateRoute path="/news/:serviceId">
+              <News></News>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/shop">
-
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
-            <Route path="/news">
-
-            </Route>
+            
           </Switch>
         </Router>
       </AuthProvider>

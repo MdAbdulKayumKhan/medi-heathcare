@@ -31,7 +31,7 @@ const Header = () => {
                         <Button onClick={logOut} variant="warning">Log Out</Button>    
                         : <Nav.Link as={Link} to="/login">log In</Nav.Link>}
                         <Navbar.Text>
-                            Signed in as: <a href="#login">{user.email && user.displayName}</a>
+                            Signed in as: <a href="#login">{user.email && user.displayName} {console.log(user.email)}</a>
                         </Navbar.Text>
                     </Navbar.Collapse>
 

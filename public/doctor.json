@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "FOUNDER",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "img": "https://i.ibb.co/QdHx2Y4/member1.png"
+  },
+  {
+    "id": 2,
+    "name": "DENTIST",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "img": "https://i.ibb.co/0CjQmBZ/member2.png"
+  },
+  {
+    "id": 3,
+    "name": "NEUROLOGIST",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "img": "https://i.ibb.co/B4VwdS9/member3.png"
+  },
+  {
+    "id": 4,
+    "name": "Neurology Sargery",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "img": "https://i.ibb.co/cDSfMQ7/member4.png"
+  },
+  {
+    "id": 5,
+    "name": "Allergic Issue",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "img": "https://i.ibb.co/f0wJnv8/member5.png"
+  },
+  {
+    "id": 6,
+    "name": "Blood Cancer",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "img": "https://i.ibb.co/WpjLzY4/member6.png"
+  },
+  {
+    "id": 7,
+    "name": "DENTIST",
+    "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut",
+    "img": "https://i.ibb.co/WpjLzY4/member6.png"
+  }
+]

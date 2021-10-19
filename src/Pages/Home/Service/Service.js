@@ -15,7 +15,7 @@ const Service = ({service}) => {
                     </div>
                     <div className="service-content">
                         <h3><Link to="#">{name}</Link></h3>
-                        <p>{description.slice(0, 100)}</p>
+                        <p>{description.slice(0, 90)}</p>
                         <Link to={`/news/${id}`}><Button variant="primary">Details</Button></Link>
                     </div>
                 </div>

@@ -22,7 +22,7 @@ const Home = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-                            <div className="section-title text-center pos-rel mb-75">
+                            <div className="section-title text-center pos-rel mb-75 h-100">
                                 <div className="section-text pos-rel">
                                     <h5>Departments</h5>
                                     <h1>Managed Your Heathcare Services</h1>

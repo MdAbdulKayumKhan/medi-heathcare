@@ -29,8 +29,10 @@ const useFirebase = () => {
         .then(result => {
             console.log(result.user);
             setErrorCatch('');
+            
             setUserName();
             verifyEmail();
+            window.location.reload();
             
         })
         .catch(error=>{
@@ -46,7 +48,7 @@ const useFirebase = () => {
           }).then(() => {
             console.log(name)
           }).catch((error) => {
-            setErrorCatch(error.message);
+            // setErrorCatch(error.message);
           });
       }
     const verifyEmail = () => {
@@ -62,6 +64,7 @@ const useFirebase = () => {
             const user = result.user;
             console.log(user);
             setErrorCatch('');
+            // window.location.reload();
           })
           .catch(error=>{
             setErrorCatch(error.message)

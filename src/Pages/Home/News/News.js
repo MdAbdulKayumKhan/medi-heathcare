@@ -1,36 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
+import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 
 const News = () => {
     const {serviceId} = useParams();
-    const [service, setService] = useState([]);
+    const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch('./generated.json')
+        fetch('/generated.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setServices(data))
     }, [])
 
-    // const serviceDetail = service.filter(srv => srv.id === serviceId);
+    const serviceDetail = services.find(service => service.id == serviceId);
     // console.log(service.filter(srv => srv.id === serviceId));
-    
+    console.log(serviceDetail)
     return (
         <div>
             <Header></Header>
-            <h1>this news</h1>
-            {/* <div className="col-xl-4 col-lg-6 col-md-6">
+            <h1>Service Details</h1>
+             <div className="col-xl-12 col-lg-12 col-md-12">
                 <div className="service-box text-center mb-30">
                     <div className="service-thumb">
-                        <img src={serviceDetail[0]?.img} alt="" />
+                        <img src={serviceDetail?.img} alt="" />
                     </div>
                     <div className="service-content">
-                        <h3><a href="#">{serviceDetail[0]?.name}</a></h3>
-                        <p>{serviceDetail[0]?.description.slice(0, 100)}</p>
+                        <h3><a href="#">{serviceDetail?.name}</a></h3>
+                        <p>{serviceDetail?.description}</p>
                        
                     </div>
                 </div>
-            </div> */}
-            
+            </div> 
+            <Footer></Footer>
+             
         </div>
     );
 };

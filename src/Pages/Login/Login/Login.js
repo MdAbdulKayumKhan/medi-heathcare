@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useLocation, useHistory} from 'react-router-dom';
 import { Button } from 'react-bootstrap';
+import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import Footer from '../../Home/Shared/Footer/Footer';
 import Header from '../../Home/Shared/Header/Header';
@@ -16,6 +16,10 @@ const Login = () => {
     const { errorCatch, resetPassword, singInUsingGoogle, cereatSinginWithEmailPassword, logInWithEmailPassword, setUserName } = useAuth();
 
     // here is redirect uri code
+    const location = useLocation();
+    console.log(location.state?.from);
+    const history = useHistory();
+    const redirect_uri = location.state?.from || '/';
     // const location = useLocation();
     // const history = useHistory();
     // const re_uri = location.state?.from || '/';
@@ -74,10 +78,17 @@ const Login = () => {
         resetPassword(email);
 
     }
-    // const handleGoogleLogin = () =>{
-    //     singInUsingGoogle()
+    const handleGoogleLogin = () =>{
+        singInUsingGoogle()
+        .then(result => {
+            // console.log(result.user);
+            // setUser(result.user);
+            history.push(redirect_uri);
+
+        })
         
-    // }
+        
+    }
     return (
         <div>
             <Header></Header>
@@ -117,7 +128,7 @@ const Login = () => {
             </section>
             <section className="mb-5">
                 <h2>Login with Google</h2>
-                <Button onClick={singInUsingGoogle} variant="warning">Google Sign In</Button>
+                <Button onClick={handleGoogleLogin} variant="warning">Google Sign In</Button>
             </section>
             <Footer></Footer>
         </div>

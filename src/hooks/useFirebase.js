@@ -8,24 +8,19 @@ const useFirebase = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [errorCatch, setErrorCatch] = useState('');
     const auth = getAuth();
-    
+    // console.log(user)
     const singInUsingGoogle = () => {
-        setIsLoading(true)
+        setIsLoading(true);
         const googleProvider = new GoogleAuthProvider();
-        signInWithPopup(auth, googleProvider)
-        .then(result => {
-            // console.log(result.user);
-            // setUser(result.user);
-            // history.push(re_uri);
-
-        })
-        .finally(() => setIsLoading(false));
+        return signInWithPopup(auth, googleProvider)
+        .finally(()=> setIsLoading(false));
 
 
     }
     // let email;
     // let password;
     const cereatSinginWithEmailPassword = (email, password) => {
+        setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
         .then(result => {
             console.log(result.user);
@@ -39,6 +34,7 @@ const useFirebase = () => {
         .catch(error=>{
             setErrorCatch(error.message)
         })
+        .finally(()=> setIsLoading(false));
             
             
             
@@ -60,6 +56,7 @@ const useFirebase = () => {
       }
 
     const logInWithEmailPassword = (email, password) =>{
+        setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
           .then(result => {
             const user = result.user;
@@ -70,6 +67,7 @@ const useFirebase = () => {
           .catch(error=>{
             setErrorCatch(error.message)
         })
+        .finally(()=> setIsLoading(false));
           
           
     }
@@ -90,25 +88,27 @@ const useFirebase = () => {
             } else {
                 setUser({})
             }
+            setIsLoading(false);
         })
         return () => unsubcribed;
-    }, [isLoading])
+    }, [])
 
     const logOut = () => {
+        setIsLoading(true);
         signOut(auth)
             .then(() => {
                 setUser({});
             })
-            .finally(() => setIsLoading(false))
+            .finally(() => setIsLoading(false));
     }
 
     return {
         user,
         singInUsingGoogle,
-        isLoading,
         cereatSinginWithEmailPassword,
         logInWithEmailPassword,
         logOut, 
+        isLoading,
         errorCatch,
         resetPassword,
         setUserName

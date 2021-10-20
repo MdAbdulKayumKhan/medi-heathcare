@@ -34,7 +34,7 @@ const Doctors = () => {
                     </div>
                     <div className="row">
                         {
-                            doctors.map(doctor => (
+                            doctors.map(doctor =>  (
                                 <div className="col-xl-4 col-lg-6 col-md-6">
                                     <div className="service-box text-center mb-30">
                                         <div className="service-thumb">

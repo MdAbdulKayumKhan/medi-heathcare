@@ -1,0 +1,10 @@
+.primary-bg{
+    background-image: url('../../../images/banner/b9.jpg');
+    background-repeat: no-repeat;
+}
+.pt-115{
+    padding-top: 115px;
+} 
+.pb-60{
+    padding-bottom: 60px;
+}

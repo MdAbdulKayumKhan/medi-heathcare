@@ -15,8 +15,11 @@ const Login = () => {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
-    const { errorCatch, resetPassword, singInUsingGoogle, cereatSinginWithEmailPassword, logInWithEmailPassword, setUserName } = useAuth();
+    const {user, errorCatch, resetPassword, singInUsingGoogle, cereatSinginWithEmailPassword, logInWithEmailPassword, setUserName } = useAuth();
 
+    if(user.email){
+        window.location.replace('/');
+    }
     // here is redirect uri code
     const location = useLocation();
     console.log(location.state?.from);

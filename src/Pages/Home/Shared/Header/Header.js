@@ -29,13 +29,13 @@ const Header = () => {
                         {/* <Nav.Link as={Link} to="/shop">Shop</Nav.Link>
                         <Nav.Link as={Link} to="/news">News</Nav.Link> */}
                         <Navbar.Text>
-                            <Link to="#">{user.email && user.displayName }{' '}</Link>
+                            <Link to="#">{user.email && user.displayName === null?  'Update User Name' : user.displayName }</Link>
                         </Navbar.Text>
                         <Navbar.Brand href="#home">
                         { user.email ?
                             <img
                             alt=""
-                            src={pro}
+                            src={user.email &&  user.photoURL === null? pro : user.photoURL}
                             width="40"
                             height="40"
                             className="d-inline-block align-top rounded-circle"

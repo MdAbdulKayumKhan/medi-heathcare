@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation, useHistory} from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import useAuth from '../../../hooks/useAuth';
 import Footer from '../../Home/Shared/Footer/Footer';
@@ -14,6 +15,12 @@ const Login = () => {
     const [isLogin, setIsLogin] = useState(false);
     const { errorCatch, resetPassword, singInUsingGoogle, cereatSinginWithEmailPassword, logInWithEmailPassword, setUserName } = useAuth();
 
+    // here is redirect uri code
+    // const location = useLocation();
+    // const history = useHistory();
+    // const re_uri = location.state?.from || '/';
+    // console.log(location.state?.from)
+ 
     const toggleLogin = e => {
         setIsLogin(e.target.checked)
     }
@@ -67,6 +74,10 @@ const Login = () => {
         resetPassword(email);
 
     }
+    // const handleGoogleLogin = () =>{
+    //     singInUsingGoogle()
+        
+    // }
     return (
         <div>
             <Header></Header>

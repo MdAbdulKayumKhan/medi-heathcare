@@ -42,7 +42,7 @@ const Doctors = () => {
                                         </div>
                                         <div className="service-content">
                                             <h3><Link to="#">{doctor.name}</Link></h3>
-                                            <p>{doctor.description.slice(0, 100)}</p>
+                                            <p>{doctor.description.slice(0, 80)}</p>
                                             <Link to={`/news/${doctor.id}`}><Button variant="primary">Details</Button></Link>
                                         </div>
                                     </div>

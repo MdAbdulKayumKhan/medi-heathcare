@@ -59,13 +59,10 @@ const Home = () => {
                                         <h1>Short Story About Medi-Heathcare Clinic.</h1>
                                     </div>
                                     <div className="about-text">
-                                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                            cupidatat non proident, sunt in culpa qui officia.</p>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><br/>
+                                        <p>you are looking for healthcare without the headache, enjoy flexible access to medical and dental care when you need it with MyHealthcare Clinic.
+                                        We make it faster, easier and more enjoyable for you to access healthcare. From same-day appointments to our high-quality service you can now access flexible healthcare that fits around your life.
+                                        Find out how you can enjoy unlimited access to GP and Dental services with our membership plans.</p>
+                                        <p>MyHealthcare Clinic is a doctor-led private healthcare business providing personalised Medical, Dental and Specialist medical care of the highest quality, all under one roof. We are open Monday to Saturday and offer same day appointments giving you unbeatable access to private care. Our highly competitive pay-as-you-go prices and unrivalled membership plans ensure we can meet every patient’s needs, whether you prefer one-off appointments or ongoing membership.</p><br/>
                                     </div>
                                     <div className="about-author d-flex align-items-center">
                                         <div className="author-ava">

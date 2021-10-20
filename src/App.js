@@ -10,6 +10,7 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Doctors from './Pages/Home/Doctors/Doctors';
 import NotFound from './Pages/NotFound/NotFound';
 
+
 function App() {
   return (
     <div className="App">

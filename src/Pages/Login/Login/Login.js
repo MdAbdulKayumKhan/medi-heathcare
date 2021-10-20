@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faSignInAlt} from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
@@ -50,7 +52,8 @@ const Login = () => {
             return;
         }
         if (isLogin) {
-            processLogin(email, password);
+            processLogin(email, password)
+            
         }
         else {
             registerNewUser(email, password);
@@ -62,8 +65,17 @@ const Login = () => {
 
     const processLogin = (email, password) => {
         logInWithEmailPassword(email, password)
-
-
+        .then(result => {
+            history.push(redirect_uri)
+            // const user = result.user;
+            // console.log(user);
+            // setErrorCatch('');
+            // window.location.reload();
+          })
+          .catch(error=>{
+            setError(error.message)
+        })
+        
     }
 
     const registerNewUser = (email, password) => {
@@ -86,9 +98,9 @@ const Login = () => {
             history.push(redirect_uri);
 
         })
-        
-        
     }
+
+    
     return (
         <div>
             <Header></Header>
@@ -128,7 +140,7 @@ const Login = () => {
             </section>
             <section className="mb-5">
                 <h2>Login with Google</h2>
-                <Button onClick={handleGoogleLogin} variant="warning">Google Sign In</Button>
+                <Button onClick={handleGoogleLogin} variant="warning"><FontAwesomeIcon icon={faSignInAlt} />Google Sign In</Button>
             </section>
             <Footer></Footer>
         </div>

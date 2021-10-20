@@ -4,12 +4,12 @@ import Footer from '../Shared/Footer/Footer';
 import Header from '../Shared/Header/Header';
 
 const News = () => {
-    const {serviceId} = useParams();
+    const { serviceId } = useParams();
     const [services, setServices] = useState([]);
-    useEffect(()=>{
+    useEffect(() => {
         fetch('/generated.json')
-        .then(res => res.json())
-        .then(data => setServices(data))
+            .then(res => res.json())
+            .then(data => setServices(data))
     }, [])
 
     const serviceDetail = services.find(service => service.id == serviceId);
@@ -19,20 +19,25 @@ const News = () => {
         <div>
             <Header></Header>
             <h1>Service Details</h1>
-             <div className="col-xl-12 col-lg-12 col-md-12">
-                <div className="service-box text-center mb-30">
-                    <div className="service-thumb">
-                        <img src={serviceDetail?.img} alt="" />
+
+
+            <div class="card mb-3 mx-auto my-5 mb-5" style={{maxWidth: '540px'}}>
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src={serviceDetail?.img} class="img-fluid rounded-start pt-3" alt="..."/>
                     </div>
-                    <div className="service-content">
-                        <h3><a href="#">{serviceDetail?.name}</a></h3>
-                        <p>{serviceDetail?.description}</p>
-                       
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{serviceDetail?.name}</h5>
+                            <p class="card-text">{serviceDetail?.description}</p>
+                            <p class="card-text"><small class="text-muted"></small></p>
+                        </div>
                     </div>
                 </div>
-            </div> 
+            </div>
+          
             <Footer></Footer>
-             
+
         </div>
     );
 };

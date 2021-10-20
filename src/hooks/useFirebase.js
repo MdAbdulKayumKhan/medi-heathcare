@@ -57,16 +57,9 @@ const useFirebase = () => {
 
     const logInWithEmailPassword = (email, password) =>{
         setIsLoading(true);
-        signInWithEmailAndPassword(auth, email, password)
-          .then(result => {
-            const user = result.user;
-            console.log(user);
-            setErrorCatch('');
-            // window.location.reload();
-          })
-          .catch(error=>{
-            setErrorCatch(error.message)
-        })
+       return signInWithEmailAndPassword(auth, email, password)
+          
+          
         .finally(()=> setIsLoading(false));
           
           

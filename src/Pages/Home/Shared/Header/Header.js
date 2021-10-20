@@ -40,7 +40,10 @@ const Header = () => {
                         /> : ' '}
                         </Navbar.Brand>
                         <Navbar.Text>
-                            <Link className="fs-5" style={{textDecoration: 'none', color: 'blue'}} to="#">{user.email && user.displayName === null?  'NameIsNuLL ' : user.displayName }</Link>
+                            <Link className="fs-5" style={{textDecoration: 'none', color: 'blue'}} to="#">
+                                {user.email && user.displayName === null?  'NameIsNuLL ' : user.displayName}</Link>
+                            
+                            {/* {user.email && user.displayName} */}
                         </Navbar.Text>
 
                         { user?.email?

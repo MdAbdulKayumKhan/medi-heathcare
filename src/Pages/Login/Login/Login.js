@@ -17,12 +17,12 @@ const Login = () => {
     const [isLogin, setIsLogin] = useState(false);
     const {user, errorCatch, resetPassword, singInUsingGoogle, cereatSinginWithEmailPassword, logInWithEmailPassword, setUserName } = useAuth();
 
-    if(user.email){
-        window.location.replace('/');
-    }
+    // if(user.email){
+    //     window.location.replace('/');
+    // }
     // here is redirect uri code
     const location = useLocation();
-    console.log(location.state?.from);
+    // console.log(location.state?.from);
     const history = useHistory();
     const redirect_uri = location.state?.from || '/';
     // const location = useLocation();
@@ -59,6 +59,7 @@ const Login = () => {
             
         }
         else {
+            // setUserName(name);
             registerNewUser(email, password);
         }
 
@@ -96,7 +97,7 @@ const Login = () => {
     const handleGoogleLogin = () =>{
         singInUsingGoogle()
         .then(result => {
-            // console.log(result.user);
+            console.log(result.user);
             // setUser(result.user);
             history.push(redirect_uri);
 
@@ -132,8 +133,8 @@ const Login = () => {
                                     </div>
 
                                     <Button type="submit" className="w-100" variant="primary">{isLogin ? 'Login' : 'Register'}</Button>
-                                    <div className="or-divide"><span>OR</span></div>
-                                    <Button onClick={handleResetPassword} className="w-100" variant="danger">Reset Password</Button>
+                                    {/* <div className="or-divide"><span>OR</span></div>
+                                    <Button onClick={handleResetPassword} type="submit" className="w-100" variant="danger">Reset Password</Button> */}
 
                                 </form>
                             </div>

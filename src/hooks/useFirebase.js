@@ -25,7 +25,6 @@ const useFirebase = () => {
         .then(result => {
             console.log(result.user);
             setErrorCatch('');
-            
             setUserName();
             verifyEmail();
             window.location.reload();
